@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bank Making</title>
+</head>
+<body>
+    <!-- first section -->
+    <section>
+        <div class="container">
+            <h1 class="text-center mt-5 text-danger" id="welcomeBank">Welcome to my bank</h1>
+            <div class="row">
+                <div class="form-control mt-5" id="form">
+                    <h3 class="text-center ">Fill up this form</h3>
+                    <input class="form-control my-3" type="text" placeholder="Email">
+                    <input class="form-control my-3" type="password" placeholder="Password">
+                    <input class="btn btn-info" id="enter" type="button" value="Enter">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- second section -->
+    <section id="secondSection">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="com-md-4">
+                    <div class="deposit bg-success" id="money">
+                        <h5>Deposit</h5>
+                        <h1>$<span id="deposit">00</span></h1>
+                    </div>
+                </div>
+                <div class="com-md-4">
+                    <div class="withdraw bg-warning" id="money">
+                        <h5>Withdraw</h5>
+                        <h1>$<span id="withdraw">00</span></h1>
+                    </div>
+                </div>
+                <div class="com-md-4">
+                    <div class="balance bg-danger" id="money">
+                        <h5>Balance</h5>
+                        <h1>$<span id="balance">00</span></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="inpuAmount">
+                        <h4>Deposit</h4>
+                        <input class="form-control mt-3" type="text" placeholder="Enter your amount" id="depositInput" required>
+                        <input class="btn btn-info mt-3" type="button" value="Diposit" id="depositButton">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="inpuAmount">
+                        <h4>Withdraw</h4>
+                        <input class="form-control mt-3" type="text" placeholder="Enter your amount" id="withdrawInput" required>
+                        <input class="btn btn-info mt-3" type="button" value="Withdraw" id="withdrawButton">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/bank.js"></script>
+</body>
+</html>
